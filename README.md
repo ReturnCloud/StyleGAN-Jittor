@@ -41,9 +41,14 @@ Using the default parameters in the code, we can get results below, which is gen
 <img src=./img/1.png width="48%"> <img src=./img/2.png width="48%">
 <img src=./img/3.png width="48%"> <img src=./img/4.png width="48%">
 We can roughly see the process of style extraction and fusion from above results.
+
 ## References
 1. https://github.com/rosinality/style-based-gan-pytorch
 2. https://github.com/Jittor/jittor
 3. https://github.com/rmunro/unicode_image_generator
 4. http://arxiv.org/abs/1812.04948
 5. https://towardsdatascience.com/creating-new-scripts-with-stylegan-c16473a50fd0
+
+## TODO
+1. Check for the code correctness on `wgan-gp` loss
+2. Test on more datasets.
