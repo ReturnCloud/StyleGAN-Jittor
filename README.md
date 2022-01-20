@@ -7,7 +7,7 @@ StyleGAN is a deep generative network model proposed by NVIDIA in 2018 for gener
 
 ### Installation
 This project can be directly copied by `git clone` using
-`git clone ...`
+`git clone https://github.com/ReturnCloud/StyleGAN-Jittor`
 Experiments are conducted under python 3.7.11 and the environment can be created by
 `conda env create -f environment.yaml`
 
