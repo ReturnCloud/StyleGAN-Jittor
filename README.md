@@ -12,13 +12,13 @@ Experiments are conducted under python 3.7.11 and the environment can be created
 `conda env create -f environment.yaml`
 
 ### Dataset
-Experiments in this project is based on [Unicode character dataset](https://github.com/rmunro/unicode_image_generator). The Code for data preparation is included in `unicode`. Run `python unicode/create_unicode_stratified.py`
+Experiments in this project is based on [Unicode character dataset](https://github.com/rmunro/unicode_image_generator). The code for data preparation is included in `unicode`. Run `python unicode/create_unicode_stratified.py`
 This will create the images in a `unicode/unicode_jpgs` directory, using the font file in the `unicode` directory. To change the image sizes, the font, the number of images per block, or other parameters, you can edit `create_unicode_stratified.py`
 
 Set the minimum size(min_size) and the path to image files. Run `python resize.py` and images will be reduced to the size with exponential of 2 until min_size. These images generated will be used in the training process later.
 
 ### Training
-`train.py` is a script for model training, `model.py` defines the architecture for generator and discriminator of the model. Details can be seen in the StyleGAN paper.
+`train.py` is a script for model training and `model.py` defines the architecture for generator and discriminator of the model. Details can be seen in the StyleGAN paper.
 Most training parameters are listed below. You can set them according to your needs in the command line when running `python train.py`
 `phase:`number of samples used in different phases during training
 `lr:`learning rate
